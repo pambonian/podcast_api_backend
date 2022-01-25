@@ -1,0 +1,12 @@
+
+body {
+    background: url("images/background.gif") no-repeat;
+}
+
+li a {
+    color: rgb(0, 255, 42);
+}
+
+li a:visited {
+    color: rgb(194, 53, 18);
+}

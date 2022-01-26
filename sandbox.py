@@ -1,4 +1,4 @@
-# 'id': 'tag:soundcloud,2010:tracks/325731840', 
+    # 'id': 'tag:soundcloud,2010:tracks/325731840', 
     # 'guidislink': False, 
     # 'title': 'EGGS 001: Who are you and what the f*ck are you doing here?', 
     # 'title_detail': 
@@ -76,6 +76,9 @@
     #         'base': 'https://feeds.simplecast.com/T8TzwY_T', 'value': 'This is it! The inaugural first episode of the EGGS podcast. EGGS is a podcast about all things creative, regardless of what that means to you. From the creativity involved in launching a business, building brand, crafting an entertainment career or whatever, we talk about the process of growing your EGG from start to finish. ---- The Plugs: Ryan R2 SLC/SPAIN r2mg.com @r2mg on twitter @r2mediagroup on instagram Mike DJ Ontic shows djontic.com @djontic on twitter The Show eggscast.com @eggshow on twitter and instagram'}, 'itunes_explicit': None, 'itunes_episodetype': 'full', 'itunes_episode': '1'}
 
 
+
+# Start Parsing
+
 import feedparser
 
 url = 'https://feeds.simplecast.com/T8TzwY_T'
@@ -84,8 +87,24 @@ def parse_rss_feed():
     feed = feedparser.parse(url)
 
     for entry in feed.entries:
-        print('****************************')
-        print(f"{entry}: {entry.link}")
-        print('****************************')
+        print('*********** Start Title *****************')
+        print(f"{entry.itunes_title}: {entry.link}")
+        print('*********** End Title *****************')
+       
+        print('*********** Start Image Link *****************')
+        print(f"{entry.image}: {entry.link}")
+        print('*********** End Image Link *****************')
+       
+        print('*********** Start Duration *****************')
+        print(f"{entry.itunes_duration}: {entry.link}")
+        print('*********** End Duration *****************')
+
+        print('*********** Start Duration *****************')
+        print(f"{entry.subtitle}: {entry.link}")
+        print('*********** End Duration *****************')
+
+        print('*********** Start Website Link *****************')
+        print(f"{entry.link}: {entry.link}")
+        print('*********** End Website Link *****************')
     
 parse_rss_feed()

@@ -81,6 +81,7 @@
 
 import feedparser
 
+
 url = 'https://feeds.simplecast.com/T8TzwY_T'
 
 def parse_rss_feed():
@@ -99,9 +100,9 @@ def parse_rss_feed():
         print(f"{entry.itunes_duration}: {entry.link}")
         print('*********** End Duration *****************')
 
-        print('*********** Start Duration *****************')
+        print('*********** Start Subtitle *****************')
         print(f"{entry.subtitle}: {entry.link}")
-        print('*********** End Duration *****************')
+        print('*********** End Subtitle *****************')
 
         print('*********** Start Website Link *****************')
         print(f"{entry.link}: {entry.link}")

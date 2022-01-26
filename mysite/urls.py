@@ -16,12 +16,14 @@ Including another URLconf
 from functools import lru_cache
 from django.contrib import admin
 from django.urls import include, path
+from users import views as user_views
 
 
 urlpatterns = [
     path('', include('blog.urls')),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
+    path('register/', user_views.register, name='register'),
     path('blog/', include('blog.urls',))
 ]
 

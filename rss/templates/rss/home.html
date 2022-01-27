@@ -1,37 +1,416 @@
-{% extends "rss/base.html" %}
-{% block content %}
-    {% for post in posts %}
-        <article class="media content-section">
-          <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
-          <div class="media-body">
-            <div class="article-metadata">
-              <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
-              <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+{% extends "rss/home.html" %} {% block content %}
+  <main>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Album example</h1>
+          <p class="lead text-muted">
+            Something short and leading about the collection below—its contents,
+            the creator, etc. Make it short and sweet, but not too short so
+            folks don’t simply skip over it entirely.
+          </p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
             </div>
-            <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
-            <p class="article-content">{{ post.content }}</p>
           </div>
-        </article>
-    {% endfor %}
-    {% if is_paginated %}
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
 
-      {% if page_obj.has_previous %}
-        <a class="btn btn-outline-warning mb-4" href="?page=1">First</a>
-        <a class="btn btn-outline-warning mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
-      {% endif %}
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
 
-      {% for num in page_obj.paginator.page_range %}
-        {% if page_obj.number == num %}
-          <a class="btn btn-warning mb-4" href="?page={{ num }}">{{ num }}</a>
-        {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
-          <a class="btn btn-outline-warning mb-4" href="?page={{ num }}">{{ num }}</a>
-        {% endif %}
-      {% endfor %}
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      {% if page_obj.has_next %}
-        <a class="btn btn-outline-warning mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
-        <a class="btn btn-outline-warning mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
-      {% endif %}
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
 
-    {% endif %}
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 {% endblock content %}

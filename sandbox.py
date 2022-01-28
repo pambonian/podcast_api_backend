@@ -88,24 +88,26 @@ def parse_rss_feed():
     feed = feedparser.parse(url)
 
     for entry in feed.entries:
-        print('*********** Start Title *****************')
-        print(f"{entry.itunes_title}: {entry.link}")
-        print('*********** End Title *****************')
-       
-        print('*********** Start Image Link *****************')
-        print(f"{entry.image}: {entry.link}")
-        print('*********** End Image Link *****************')
-       
-        print('*********** Start Duration *****************')
-        print(f"{entry.itunes_duration}: {entry.link}")
-        print('*********** End Duration *****************')
 
-        print('*********** Start Subtitle *****************')
-        print(f"{entry.subtitle}: {entry.link}")
-        print('*********** End Subtitle *****************')
+        print(f"{entry[2]}")
+        # print('*********** Start Title *****************')
+        # print(f"{entry.itunes_title}: {entry.link}")
+        # print('*********** End Title *****************')
+       
+        # print('*********** Start Image Link *****************')
+        # print(f"{entry.image}: {entry.link}")
+        # print('*********** End Image Link *****************')
+       
+        # print('*********** Start Duration *****************')
+        # print(f"{entry.itunes_duration}: {entry.link}")
+        # print('*********** End Duration *****************')
 
-        print('*********** Start Website Link *****************')
-        print(f"{entry.link}: {entry.link}")
-        print('*********** End Website Link *****************')
+        # print('*********** Start Subtitle *****************')
+        # print(f"{entry.subtitle}: {entry.link}")
+        # print('*********** End Subtitle *****************')
+
+        # print('*********** Start Website Link *****************')
+        # print(f"{entry.link}: {entry.link}")
+        # print('*********** End Website Link *****************')
     
 parse_rss_feed()

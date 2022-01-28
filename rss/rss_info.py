@@ -39,3 +39,8 @@ except Exception as e:
     itunes_explicit = None
     cover_art = None
     media = None
+
+
+items = item_results
+
+print(items)

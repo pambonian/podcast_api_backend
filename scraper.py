@@ -6,10 +6,8 @@ source = requests.get('https://feeds.simplecast.com/T8TzwY_T').text
 soup = BeautifulSoup(source, 'lxml')
 
 
-
 # for item in soup.findAll('item'):
 for item in soup.findAll('item'):
-
 
     site_title = item.find('title').text
     itunes_episode = item.find('itunes:episode').text
@@ -32,7 +30,7 @@ try:
     print()
 
 except Exception as e:
-        
+
     site_title = None
     itunes_episode = None
     itunes_title = None

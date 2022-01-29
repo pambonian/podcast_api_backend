@@ -5,6 +5,7 @@ import requests
 source = requests.get('https://feeds.simplecast.com/T8TzwY_T').text
 soup = BeautifulSoup(source, 'lxml')
 
+item_results = []
 
 # for item in soup.findAll('item'):
 for item in soup.findAll('item'):
@@ -19,7 +20,7 @@ for item in soup.findAll('item'):
     cover_art = item.find('itunes:image')
     media = item.find('enclosure')['url']
 
-    item_results = {
+    item_results.append({
         
         site_title: site_title, 
         itunes_episode: itunes_episode, 
@@ -30,7 +31,7 @@ for item in soup.findAll('item'):
         itunes_summary: itunes_summary, 
         cover_art: cover_art, 
         media:media,
-    }
+    })
 
     # print(item_results)
 
@@ -49,7 +50,5 @@ except Exception as e:
     cover_art = None
     media = None
 
-
 items = item_results
-
 

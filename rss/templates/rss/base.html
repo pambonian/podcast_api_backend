@@ -9,7 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rss/main.css' %}">
 
     {% if title %}
         <title>Eggs Podcast Network - {{ title }}</title>
@@ -28,7 +28,7 @@
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{% url 'rss-home' %}">Home</a>
-              <a class="nav-item nav-link" href="{% url 'rss-about' %}">About</a>
+              {% comment %} <a class="nav-item nav-link" href="{% url 'rss-about' %}">About</a> {% endcomment %}
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">

@@ -5,5 +5,5 @@ from .import views
 
 urlpatterns = [
     path('', views.home, name='rss-home'),
-    path('videos/', views.videos, name='rss-videos'),
+    # path('videos/', views.videos, name='rss-videos'),
 ]

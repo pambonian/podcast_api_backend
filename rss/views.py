@@ -1,11 +1,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .rss_info import items
+
 
 def home(request):
-    return HttpResponse('<h1>Rss Home</>')
+    context = {
+        'items': items
+    }
+    print('Items', type(items))
+    return render(request, 'rss/home.html', context)
 
-def videos(request):
-    return HttpResponse('<h1>Rss Videos</>')
 
 
 

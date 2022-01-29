@@ -19,11 +19,20 @@ for item in soup.findAll('item'):
     cover_art = item.find('itunes:image')
     media = item.find('enclosure')['url']
 
-    item_results = [
-        site_title, itunes_episode, itunes_title, itunes_author, itunes_duration, itunes_explicit, itunes_summary, cover_art, media
-    ]
+    item_results = {
+        
+        site_title: site_title, 
+        itunes_episode: itunes_episode, 
+        itunes_title: itunes_episode, 
+        itunes_author: itunes_author, 
+        itunes_duration: itunes_duration, 
+        itunes_explicit: itunes_explicit, 
+        itunes_summary: itunes_summary, 
+        cover_art: cover_art, 
+        media:media,
+    }
 
-    print(item_results)
+    # print(item_results)
 
 try:
 
@@ -43,4 +52,4 @@ except Exception as e:
 
 items = item_results
 
-print(items)
+

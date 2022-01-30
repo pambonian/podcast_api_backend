@@ -17,8 +17,9 @@ for item in soup.findAll('item'):
     itunes_duration = item.find('itunes:duration').text
     itunes_explicit = item.find('itunes:explicit').text
     itunes_summary = item.find('itunes:summary').text
-    cover_art = item.find('itunes:image')
+    cover_art = item.find('itunes:image')['url']
     audio_link = item.find('enclosure')['url']
+    pub_date = item.find('pubDate')
 
     item_results.append({
         
@@ -31,6 +32,7 @@ for item in soup.findAll('item'):
         'itunes_summary': itunes_summary, 
         'cover_art': cover_art, 
         'audio_link':audio_link,
+        'pub_date':pub_date,
     })
 
 try:
@@ -47,22 +49,16 @@ except Exception as e:
     itunes_explicit = None
     cover_art = None
     media = None
+    pub_date = None
 
 ##################
 
-print(item_results)
 
+# def return_data(results, string_format):
+#     # Create our empty list
+#     return_list = []
 
-def return_data(results, string_format):
-    # Create our empty list
-    return_list = []
-
-
-
-    return return_list
-
-
-
+#     return return_list
 
 
 # for i in range(len(item_results)):
@@ -80,6 +76,10 @@ def return_data(results, string_format):
     # ]
 
 
-# for i in range(100):
-#     print(type(item_results[i]))
-#     print(item_results[i]['itunes_title'])
+for i in range(100):
+    # print(type(item_results[i]))
+    # print(item_results[i]['itunes_title'])
+    # print(item_results[i]['itunes_summary'])
+    # print(item_results[i]['pub_date'])
+    # print(item_results[i]['itunes_author'])
+    print(item_results[i]['cover_art'])

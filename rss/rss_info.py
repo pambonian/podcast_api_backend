@@ -17,7 +17,7 @@ for item in soup.findAll('item'):
     itunes_duration = item.find('itunes:duration').text
     itunes_explicit = item.find('itunes:explicit').text
     itunes_summary = item.find('itunes:summary').text
-    cover_art = item.find('itunes:image')['url']
+    cover_art = item.find('itunes:image')['href']
     audio_link = item.find('enclosure')['url']
     pub_date = item.find('pubDate')
 
@@ -76,10 +76,10 @@ except Exception as e:
     # ]
 
 
-for i in range(100):
+# for i in range(100):
     # print(type(item_results[i]))
     # print(item_results[i]['itunes_title'])
     # print(item_results[i]['itunes_summary'])
     # print(item_results[i]['pub_date'])
     # print(item_results[i]['itunes_author'])
-    print(item_results[i]['cover_art'])
+    # print(item_results[i]['cover_art'])

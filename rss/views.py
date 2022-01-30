@@ -17,6 +17,7 @@ def home(request):
     
     return render(request, 'rss/home.html', context)
 
+
 # def booking(request):
 #     return render(request, 'rss/booking.html')
 

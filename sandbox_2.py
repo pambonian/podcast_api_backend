@@ -35,7 +35,7 @@ for item in soup.findAll('item'):
 
 try:
 
-   None
+    None
 
 except Exception as e:
 
@@ -48,38 +48,16 @@ except Exception as e:
     cover_art = None
     media = None
 
-##################
-
-print(item_results)
+print(type(item_results))    
 
 
-def return_data(results, string_format):
-    # Create our empty list
-    return_list = []
+# def return_data(results):
+#     return results
 
-
-
-    return return_list
+# return_data(item_results)
+    
 
 
 
 
 
-# for i in range(len(item_results)):
-#     print(item_results[i])    
-    # [
-    #     'site_title',
-    #     'itunes_episode',
-    #     'itunes_title',
-    #     'itunes_author',
-    #     'itunes_duration',
-    #     'itunes_explicit',
-    #     'itunes_summary',
-    #     'cover_art',
-    #     'media',
-    # ]
-
-
-# for i in range(100):
-#     print(type(item_results[i]))
-#     print(item_results[i]['itunes_title'])

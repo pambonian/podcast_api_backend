@@ -1,3 +1,5 @@
+### Scraper Function Example
+
 def get_posts_details(rss=None):
     
     """

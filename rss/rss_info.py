@@ -50,6 +50,9 @@ except Exception as e:
 
 ##################
 
+print(item_results)
+
+
 def return_data(results, string_format):
     # Create our empty list
     return_list = []
@@ -58,32 +61,8 @@ def return_data(results, string_format):
 
     return return_list
 
-string_format_base = 'Hi, I\'m %s and I like to eat %s.'
 
 
-
-##################
-dicts = [
-        {'name': 'Michelangelo', 'food': 'PIZZA'},
-        {'name': 'Garfield', 'food': 'lasanga'},
-        {'name': 'Walter', 'food': 'pancakes'},
-        {'name': 'Galactus', 'food': 'worlds'}
-    ]
-
-def string_factory(dict_factory, string_format):
-    # Create our empty list
-    return_list = []
-
-    for item in dict_factory:
-        # So we can go ahead and append this to our return_list
-        return_list.append(string_format % (item['name'], item['food']))
-
-    return return_list
-
-string_format_base = 'Hi, I\'m %s and I like to eat %s.'
-
-# Call the function
-string_factory(dicts, string_format_base)
 
 
 # for i in range(len(item_results)):

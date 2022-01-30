@@ -4,6 +4,8 @@ import requests
 source = requests.get('https://feeds.simplecast.com/T8TzwY_T').text
 soup = BeautifulSoup(source, 'lxml')
 
+item_results = []
+
 for item in soup.findAll('item'):
     try:
         site_title = item.title.text
@@ -15,6 +17,7 @@ for item in soup.findAll('item'):
         itunes_summary = item.find('itunes:summary')
         cover_art = item.find('itunes:image')
         media = item.find('enclosure')
+        
     except Exception as e:
         site_title = None
         itunes_episode = None
@@ -26,19 +29,13 @@ for item in soup.findAll('item'):
         cover_art = None
         media = None
 
-item_results = item
+    item_results.append()
+
+item_results
 
 
 
-print(item_results([
-    site_title, 
-    itunes_episode,
-    itunes_title, 
-    itunes_author, 
-    itunes_duration, 
-    itunes_summary,
-    cover_art, 
-]))
+# print(item_results)
 
 
 

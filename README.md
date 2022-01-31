@@ -90,7 +90,9 @@ https://docs.djangoproject.com/en/4.0/intro/tutorial01/
 [Patrick Brennan](https://github.com/pambonian)
 
 
-##### scrapper.py referenced from here:
+<hr />
+
+#### scrapper.py referenced from here:
 
 <br />
 

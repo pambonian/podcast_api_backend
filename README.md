@@ -32,8 +32,9 @@
 ## Special Thanks to:
 #### Justin: Help debuggin views rss route. 
 #### Roland: Help debuggin a few errors.  
-#### Avery: Implimineting pagination and your help during office hours all corse.  
+#### Avery: Implimineting pagination and help during office hours.  
 #### Eric: Helped with parsing rss feed. 
+#### Perice: Thanks for helping out all cohort. 
 
 
 

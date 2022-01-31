@@ -1,11 +1,5 @@
 <div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
+
 
 
 
@@ -17,42 +11,34 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<div align="center">
 
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-
-
 ![Contributors][contributors-shield] <br>
 [Michael Smith](https://github.com/onticinc) <br>
 [Patrick Brennan](https://github.com/pambonian)<br>
 
-Special Thanks to:
-Justin - Helping debug route. 
-Roland - Helping debug. 
-Avery - Implimenting pagination 
-Eric - Help with parsing rss feed. 
+## Special Thanks to:
+@Justin - Helping debug route. 
+@Roland - Helping debug. 
+@Avery - Implimenting pagination 
+@Eric - Help with parsing rss feed. 
 
 
-<bold>Extra Special thanks to:</bold> 
-Rome - For Kickin ass and taking names, in a very professional manner.
-
-</div>
-
+# <bold>Extra Special thanks to:</bold> 
+@Rome - For Kickin ass and taking names, in a very professional manner.
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/onticinc/podcast_template">
-    <img src="https://i.imgur.com/gi4BvGD.png" alt="Logo" width="80" height="80">
+    <img src="https://djontic.com/wp-content/uploads/2022/01/R217-0109_Eggs_Profile_Art_v01.jpg" alt="Logo" width="80" height="80">
   </a>
 
 
-
-  
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -81,8 +67,6 @@ Rome - For Kickin ass and taking names, in a very professional manner.
   </ol>
 </details>
 
-<br>
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -106,28 +90,17 @@ https://www.youtube.com/watch?v=ng2o98k983k
 
 
 
-
-
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 ### Built With
-
-
 
 * [Python.js](https://www.python.org/)
 * [Django.js](https://www.djangoproject.com/)
 * [Postgres.js](https://www.postgresql.org/)
 * [Crispy_forms.js](https://github.com/django-crispy-forms/django-crispy-forms)
 * [Aws3](https://aws.amazon.com/s3/)
-* [Node.js](https://nodejs.org/en/)
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -144,9 +117,9 @@ To get a local copy up and running follow these simple steps.
    ```sh
    <!-- Put Sequences here.  -->
    ```
-3. 
+3. change rss link in rss/rss_info.py
 
-   ```
+  
 5. 
 6. 
     
@@ -162,22 +135,20 @@ To get a local copy up and running follow these simple steps.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- SCREENSHOT OF THE SITE -->
 
 ## Appearance
-<div align="center">
+
 
 ![Alt text]()
 
-![Alt text](https://i.imgur.com/8WLMDBO.png)
+![Alt text](https://djontic.com/wp-content/uploads/2022/01/Screen-Shot-2022-01-31-at-5.58.53-AM.png)
 
-![Alt text](https://i.imgur.com/RIHWR92.png)
+![Alt text](https://djontic.com/wp-content/uploads/2022/01/Screen-Shot-2022-01-31-at-5.59.05-AM.png)
 
-![Alt text](https://i.imgur.com/MQasQ3v.png)
+![Alt text](https://djontic.com/wp-content/uploads/2022/01/Screen-Shot-2022-01-31-at-6.00.41-AM.png)
 
-![Alt text](https://i.imgur.com/uSVZVhr.png)
 
-</div>
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -236,8 +207,13 @@ https://en.wikipedia.org/wiki/Beautiful_Soup_(HTML_parser)
 
 - It is available for Python 2.7 and Python 3
 
-## bcrypt
-- bcrypt is a password-hashing function designed by Niels Provos and David Mazières, based on the Blowfish cipher and presented at USENIX in 1999. Besides incorporating a salt to protect against rainbow table attacks, bcrypt is an adaptive function: over time, the iteration count can be increased to make it slower, so it remains resistant to brute-force search attacks even with increasing computation power.
+## Crispy Forms
+- jango-crispy-forms provides you with a |crispy filter and {% crispy %} tag that will let you control the rendering behavior of your Django forms in a very elegant and DRY way. Have full control without writing custom form templates. All this without breaking the standard way of doing things in Django, so it plays nice with any other form application.
+
+Referenced from:
+https://django-crispy-forms.readthedocs.io/en/latest/
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -265,15 +241,11 @@ View our user stories page by following [this link](https://github.com/onticinc/
 
 ## Project Wireframes
 
-![Alt text](https://i.imgur.com/elBrbgk.png)
+Rebuilt existing project
+www.eggscast.com
 
-![Alt text](https://i.imgur.com/ID426sI.png)
 
-![Alt text](https://i.imgur.com/shUjrcg.png)
 
-![Alt text](https://i.imgur.com/jKftZkX.png)
-
-![Alt text](https://i.imgur.com/qGrHgpc.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

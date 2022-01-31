@@ -17,7 +17,7 @@ def home(request):
         'total_pages': total_pages,
     }
     
-    return render(request, 'home.html', context)
+    return render(request, 'rss/home.html', context)
 
 def site_home(request):
     return render(request, 'rss/rss.html',)

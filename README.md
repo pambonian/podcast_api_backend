@@ -102,9 +102,20 @@ https://www.youtube.com/watch?v=ng2o98k983k
 ### Built With
 
 [Python.js](https://www.python.org/)
+<br />
+
 [Django.js](https://www.djangoproject.com/)
+
+<br />
+
 [Postgres.js](https://www.postgresql.org/)
+
+<br />
+
 [Crispy_forms.js](https://github.com/django-crispy-forms/django-crispy-forms)
+
+<br />
+
 [Aws3](https://aws.amazon.com/s3/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>

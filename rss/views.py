@@ -17,10 +17,11 @@ def home(request):
         'total_pages': total_pages,
     }
     
-    return render(request, 'rss/rss.html', context)
+    return render(request, 'home.html', context)
 
 def site_home(request):
-    return render(rquest, 'home.html')
+    return render(request, 'rss/rss.html',)
+    
 
 
 

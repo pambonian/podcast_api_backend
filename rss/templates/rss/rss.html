@@ -1,49 +1,33 @@
 {% extends "rss/base.html" %}
 {% block content %}
-    {% for item in items %}
-    <div class="media content-section">
-      <img class="align-self-start article-img mr-3" src="{{ item.cover_art }}" alt="Eggs Podcast Cover Art">
-      <div class="media-body">
-        
-        <p class="mt-0" id="title">{{ item.itunes_title }}</p>
-        <iframe height="52px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/9473c1d8-463c-46fc-bf48-92e75c4a1598?dark=true"></iframe>
-        
-        <div class="article-metadata">
-          {{ item.itunes_author }}
-        </div>
 
-        {% comment %} <iframe height="52px" width="100%" frameborder="no" scrolling="no" seamless src="{{ item.audio_link }}"></iframe> {% endcomment %}
-        {% comment %} <iframe height="52px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/b7a5af0d-6f46-4bd4-8c60-48baff4a5a28?dark=false"></iframe> {% endcomment %} 
-        
-        
-        <p class="article-content">{{ item.itunes_summary }}</p>
-      </div>
-    </div>
-    {% endfor %}
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Wdnf1C_spuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p class="small_title">Making the software development process more affordable with <a href="https://www.linkedin.com/in/ryanvice/">Ryan Vice</a></p>
+    <hr />
+    
+    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/eb53044e-b280-44d0-aa3d-ff9e60ebb41f?dark=true"></iframe>
+    <p class="small_title">The rise of international rock phenomenon, <a href="https://www.linkedin.com/in/ryanvice/">Vayden</a></p>
+    <hr />
 
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/D6mmSonJgII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p class="small_title">Energy transition and the future of hydrogen fuel technology with <a href="https://www.linkedin.com/in/novationleadership/">Andrew Murphy</a></p>
+    <hr />
+    
+    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/80a7cf01-19f3-4ce4-bdb5-b9bfca237bdf?dark=true"></iframe>
+    <p class="small_title">Bringing time-honored crafts to the masses through television with <a href="https://en.wikipedia.org/wiki/Forged_in_Fire">J. Neilson</a></p>
+    <hr />
 
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/G69PKh80VTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p class="small_title">Revolutionizing the hip-hop art form w/ founding member of the X-ecutioners,<a href="https://brolicarmydjschool.com/">DJ Rob Swift</a></p>
+    <hr />
+    
+    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/6f819141-eacc-4db1-a82e-ece08bf83fff?dark=true"></iframe>
+    <p class="small_title">The greatest environmental challenges facing us today, and how to solve them, with <a href="https://www.youtube.com/channel/UCRBwLPbXGsI2cJe9W1zfSjQ">Dave Borlace</a></p>
+    <hr />
+    
 
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/s944YWuUrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p class="small_title">How to sell your online business for top dollar with ,<a href="https://exitpreneur.io/">Joe Valley</a></p>
+    <hr />
 
-    {% comment %} Need to debug {% endcomment %}
-
-    {% comment %} {% if is_paginated %}
-      {% if item.has_previous %}
-        <a class="btn btn-outline-link mb-4 pag_button" href="?page=1">First</a>
-        <a class="btn btn-outline-link mb-4 pag_button" href="?page={{ item.previous_page_number }}">Previous</a>
-      {% endif %}
-
-      {% for num in items.paginator.page_range %}
-        {% if page_obj.number == num %}
-          <a class="btn btn-link mb-4 pag_button_selected" href="?page={{ num }}">{{ num }}</a>
-        {% elif num > item.number|add:'-3' and num < item.number|add:'3' %}
-          <a class="btn btn-outline-link mb-4" href="?page={{ num }}">{{ num }}</a>
-        {% endif %}
-      {% endfor %}
-
-      {% if item.has_next %}
-        <a class="btn btn-outline-link mb-4 pag_button" href="?page={{ page_obj.next_page_number }}">Next</a>
-        <a class="btn btn-outline-link mb-4 pag_button" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
-      {% endif %}
-
-    {% endif %} {% endcomment %}
 {% endblock content %}

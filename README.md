@@ -38,11 +38,9 @@
 
 
 
- 
-
-
 # <bold>Extra Special thanks to:</bold> 
-## @Rome - For Kickin ass and taking names, in a very professional manner.
+## @Rome - For Kickin ass and taking names, 
+#### in a very professional manner.
 
 
 

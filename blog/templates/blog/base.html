@@ -7,22 +7,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
-    <link rel="icon"href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rss/main.css' %}">
+    {% comment %} <link rel="icon"href="{% static 'favicon.ico' %}"> {% endcomment %}
     {% if title %}
         <title>Eggs The Podcast - {{ title }}</title>
     {% else %}
         <title>Eggs The Podcast</title>
     {% endif %}
-    
 </head>
 <body>
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-          <a class="navbar-brand mr-4" href="{% url 'rss-home' %}">Eggs Forum</a>
+          <a class="navbar-brand mr-4" href="{% url 'rss-home' %}"><i class="fas fa-egg"></i></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -57,6 +63,7 @@
               </div>
             {% endfor %}
           {% endif %}
+
           {% block content %}{% endblock %}
         </div>
         <div class="col-md-4">
@@ -64,15 +71,15 @@
             <div clas="blog-side-menu">
               <div class="side-menu-center">
                 {% comment %} REPLACE IMAGE LINK WITH UPLOAD {% endcomment %}
-                <img class="sidebar-logo"id="sidebar-logo" src="https://uploads-ssl.webflow.com/5a1d970f67361900012726e0/5a1d98c907d9180001e411b3_eggs_head_logo500.png" style="max-width:250px;"/>
+                <img id="sidebar-logo" src="https://uploads-ssl.webflow.com/5a1d970f67361900012726e0/5a1d98c907d9180001e411b3_eggs_head_logo500.png" style="max-width:250px;"/>
                 <h3>Welcome!</h3>
                 <p class='text-muted'>Thanks For Joining Our Community.</p>
+              
 
                 <p class='text-muted'>
                   <ul class="list-group">
-                    <li class="list-group-item list-group-item-light"><a href="{% url 'register' %}">Join Our Online Community</a></li>
                     <li class="list-group-item list-group-item-light"><a href="https://discord.gg/2zJPvUpa">Join Our Discord Channel</a></li>
-                    <li class="list-group-item list-group-item-light"><a href="https://www.patreon.com/eggscast">Support The Show And Get Perks!</a></li>
+                    <li class="list-group-item list-group-item-light"><a href="https://www.patreon.com/eggscast">Support The Show!</a></li>
                   </ul>
                 </p>
               </div>

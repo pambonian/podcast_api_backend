@@ -36,7 +36,7 @@ Avery - Implimenting pagination
 Eric - Help with parsing rss feed. 
 
 
-Extra Special thanks to: 
+<bold>Extra Special thanks to:</bold> 
 Rome - For Kickin ass and taking names, in a very professional manner.
 
 </div>
@@ -86,19 +86,24 @@ Rome - For Kickin ass and taking names, in a very professional manner.
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+#### Link to Linode deployment:
+http://173.230.133.42:8000/
+
+
 Initial Build was from this series. 
 https://www.youtube.com/watch?v=UmljXZIypDc
 
 Poll App is from Django Tutorial Docs. 
 https://docs.djangoproject.com/en/4.0/intro/tutorial01/
 
-Rss App is parsed and layed out by:
+Rss App is parsed and designed by:
 [Michael Smith](https://github.com/onticinc) <br>
 [Patrick Brennan](https://github.com/pambonian)
 
 
 scrapper.py referenced from here:
 https://www.youtube.com/watch?v=ng2o98k983k
+
 
 
 
@@ -142,24 +147,8 @@ To get a local copy up and running follow these simple steps.
 3. 
 
    ```
-5. Create a .env file in the front and backend. Set your  mongo SRV with 
-    ```
-    MONGO_URI
-    ```
-    example: 
-    ```
-    MONGO_URI = mongodb+srv:// ... (etc)
-    ```
-    then, similarly - add 
-    ```
-    JWT_SECRET= 
-    ```
-    to your .env files and assign it your own value.
-6. Now on both the front and backend, run:
-    ```
-    npm start
-    ```
-    You should now be able to view and interact with your local copy of the Mercers app!
+5. 
+6. 
     
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -196,14 +185,35 @@ To get a local copy up and running follow these simple steps.
 
 ## Technologies Used
 
-## Node.js
-- As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep.
+## Python.js
 
-## React
+- Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
 
-- React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications. However, React is only concerned with state management and rendering that state to the DOM, so creating React applications usually requires the use of additional libraries for routing, as well as certain client-side functionality.
+Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.
 
-## Axios
+Guido van Rossum began working on Python in the late 1980s, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0. 
+
+Python 2.0 was released in 2000 and introduced new features, such as list comprehensions and a cycle-detecting garbage collection system (in addition to reference counting). 
+
+Python 3.0 was released in 2008 and was a major revision of the language that is not completely backward-compatible. Python 2 was discontinued with version 2.7.18 in 2020.
+
+Python consistently ranks as one of the most popular programming languages.
+
+Referenced from:
+https://en.wikipedia.org/wiki/Python_(programming_language)
+
+## Postgres
+
+- PostgreSQL (/ˈpoʊstɡrɛs ˌkjuː ˈɛl/, POHST-gres kyoo el), also known as Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance. It was originally named POSTGRES, referring to its origins as a successor to the Ingres database developed at the University of California, Berkeley. 
+
+In 1996, the project was renamed to PostgreSQL to reflect its support for SQL. After a review in 2007, the development team decided to keep the name PostgreSQL and the alias Postgres.]
+
+PostgreSQL features transactions with Atomicity, Consistency, Isolation, Durability (ACID) properties, automatically updatable views, materialized views, triggers, foreign keys, and stored procedures. It is designed to handle a range of workloads, from single machines to data warehouses or Web services with many concurrent users. It is the default database for macOS Server and is also available for Windows, Linux, FreeBSD, and OpenBSD.
+
+Referenced from:
+https://en.wikipedia.org/wiki/PostgreSQL
+
+## Django
 - Axios, which is a popular library is mainly used to send asynchronous HTTP requests to REST endpoints. This library is very useful to perform CRUD operations.
 - This popular library is used to communicate with the backend. Axios supports the Promise API, native to JS ES6.
 - Using Axios we make API requests in our application. Once the request is made we get the data in Return, and then we use this data in our project. 

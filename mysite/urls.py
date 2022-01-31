@@ -22,11 +22,13 @@ from users import views as user_views
 
 urlpatterns = [
 
+    # rss routes
     path('', include('rss.urls')),
     path('rss/', include('rss.urls')),
+
+    # blog routes
     path('blog/', include('blog.urls')),
     
-    # path('booking/', user_views.booking, name='booking'),
     path('admin/', admin.site.urls),
     path('register/', user_views.register, name='register'),
     path('profile/', user_views.profile, name='profile'),

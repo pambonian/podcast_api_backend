@@ -136,11 +136,14 @@ To get a local copy up and running follow these simple steps.
    ```sh
    git clone https://github.com/onticinc/podcast_template.git
    ```
-2. Install packages
+2. Change rss link in rss/rss_info.py
    ```sh
-   <!-- Put Sequences here.  -->
+   source = requests.get('https://feeds.simplecast.com/T8TzwY_T').text
    ```
-3. change rss link in rss/rss_info.py
+3. Install Packages and Migrate
+  ```sh
+
+  ```
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -239,11 +242,15 @@ https://django-crispy-forms.readthedocs.io/en/latest/
 
 ## General Approach
 
-Our frontend and backend teams collaboratively built the idea for Mercer. We wanted an online-store application where we could innovate on ideas we thought could interact well on a single platform.
+We started by making the example Poll app in Django's docs. Next we followed a blog turorial. 
 
-We began by creating our wireframe and laying out our user stories. With these as the foundation, our backend team built out the database tools necessary to provide functionality to the app. Our frontend began creating components and pages to address the requirements we had produced from our wireframes. 
+We deployed to Linode after getting the blog working. During that process we realized how hard it was to deploy to Linode. Not wanting to go throught that process everytime we decided to deploy to heroku after making the rss app and front end changes...  
 
-Over time, the backend was connected in these pages and components, and the basic functionality of the app emerged. From there, both teams worked to add the more complex (but awesome) features we’d set out to create. Up until the time of our deployment, we continued working to build out and improve our UI and UX. 
+That was a big mistake. Lots of debugging, many tears. (not really... ok maybe a few.)
+
+Heroku does not have a way to store images or other media other than AWS buckets. We set that up and got the images pulling from our buckets.
+
+When we went to deploy to heroku we were getting 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -269,10 +276,12 @@ www.eggscast.com
 
 <!-- ROADBLOCKS -->
 
-## Roadblocks
+# Roadblocks
 
-Frontend:
-- Creating a functional map tool to allow users to view how near/far they are from the listings. We were able to produce the nonfunctional map element on the app, but making it functional in our timeframe was not tenable.
+## RSS:
+
+
+##### Figuring out how to scrape a rss feed with Beautiful Soup was tricky. Took a lot of tryal and error with the views to get it to work in the end. 
 
 - Bidding/Haggling/Reservation interaction. We wanted to allow potential buyers to post their best offer on an item, or make counteroffers, or pay extra to the seller to be able to reserve a product. We did not have enough time during the timeframe to attempt to implement these features.
 
@@ -286,19 +295,3 @@ See the [open issues](https://github.com/onticinc/mercer/issues) for a full list
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>

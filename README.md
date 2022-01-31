@@ -12,16 +12,51 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Forks][forks-shield]][forks-url]
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/onticinc/podcast_template">
+    <img src="https://djontic.com/wp-content/uploads/2022/01/R217-0109_Eggs_Profile_Art_v01.jpg" alt="Logo" width="300" height="300">
+  </a>
+
+
+
+<!-- [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![MIT License][license-shield]][license-url] -->
 
 ![Contributors][contributors-shield] <br>
 [Michael Smith](https://github.com/onticinc) <br>
 [Patrick Brennan](https://github.com/pambonian)<br>
 
 ## Special Thanks to:
-@Justin - Helping debug route. 
+
+<summary>Debuggers</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">@Justin:  </a>
+      <ul>
+        <li><a href="#built-with"> Helping debug route.</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#appearance">Appearance</a></li>
+    <li><a href="#technologies-used">Technologies Used</a></li>
+    <li><a href="#general-approach">General Approach</a></li>
+    <li><a href="#user-stories">User Stories</a></li>
+    <li><a href="#project-wireframes">Project Wireframes</a></li>
+    <li><a href="#roadblocks">Roadblocks</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+
+
 @Roland - Helping debug. 
 @Avery - Implimenting pagination 
 @Eric - Help with parsing rss feed. 
@@ -31,12 +66,6 @@
 @Rome - For Kickin ass and taking names, in a very professional manner.
 
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/onticinc/podcast_template">
-    <img src="https://djontic.com/wp-content/uploads/2022/01/R217-0109_Eggs_Profile_Art_v01.jpg" alt="Logo" width="80" height="80">
-  </a>
 
 
 <!-- TABLE OF CONTENTS -->
@@ -119,13 +148,8 @@ To get a local copy up and running follow these simple steps.
    ```
 3. change rss link in rss/rss_info.py
 
-  
-5. 
-6. 
-    
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->

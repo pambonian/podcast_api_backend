@@ -336,9 +336,7 @@ https://django-crispy-forms.readthedocs.io/en/latest/
 
 # Roadblocks
 
-<hr />
 
-## RSS:
 
 
 <hr />

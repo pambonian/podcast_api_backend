@@ -3,5 +3,6 @@ from .import views
 
 urlpatterns = [
     path('', views.home, name='rss-home'), 
-    path('link/', views.link, name='link'), 
+    
+    # path('booking/', views.booking, name='booking'), 
 ]

@@ -99,7 +99,11 @@ https://www.youtube.com/watch?v=ng2o98k983k
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Built With
+<hr />
+
+# Built With
+
+<br />
 
 [Python.js](https://www.python.org/)
 

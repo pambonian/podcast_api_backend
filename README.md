@@ -25,45 +25,23 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url] -->
 
-![Contributors][contributors-shield] <br>
+<!-- ![Contributors][contributors-shield] <br> -->
 [Michael Smith](https://github.com/onticinc) <br>
 [Patrick Brennan](https://github.com/pambonian)<br>
 
 ## Special Thanks to:
-
-<summary>Debuggers</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">@Justin:  </a>
-      <ul>
-        <li><a href="#built-with"> Helping debug route.</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#appearance">Appearance</a></li>
-    <li><a href="#technologies-used">Technologies Used</a></li>
-    <li><a href="#general-approach">General Approach</a></li>
-    <li><a href="#user-stories">User Stories</a></li>
-    <li><a href="#project-wireframes">Project Wireframes</a></li>
-    <li><a href="#roadblocks">Roadblocks</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-  </ol>
+#### Justin: Help debuggin views rss route. 
+#### Roland: Help debuggin a few errors.  
+#### Avery: Implimineting pagination and your help during office hours all corse.  
+#### Eric: Helped with parsing rss feed. 
 
 
-@Roland - Helping debug. 
-@Avery - Implimenting pagination 
-@Eric - Help with parsing rss feed. 
+
+ 
 
 
 # <bold>Extra Special thanks to:</bold> 
-@Rome - For Kickin ass and taking names, in a very professional manner.
+## @Rome - For Kickin ass and taking names, in a very professional manner.
 
 
 

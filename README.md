@@ -86,6 +86,23 @@ Rome - For Kickin ass and taking names, in a very professional manner.
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+Initial Build was from this series. 
+https://www.youtube.com/watch?v=UmljXZIypDc
+
+Poll App is from Django Tutorial Docs. 
+https://docs.djangoproject.com/en/4.0/intro/tutorial01/
+
+Rss App is parsed and layed out by:
+[Michael Smith](https://github.com/onticinc) <br>
+[Patrick Brennan](https://github.com/pambonian)
+
+
+scrapper.py referenced from here:
+https://www.youtube.com/watch?v=ng2o98k983k
+
+
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

@@ -19,14 +19,8 @@ def rss(request):
     
     return render(request, 'rss/rss.html', context)
 
-# hello this is a change
-
-# def booking(request):
-#     return render(request, 'rss/booking.html')
 
 
-# def videos(request):
-#     return render( )
 
 
 

@@ -28,19 +28,21 @@
 <!-- ![Contributors][contributors-shield] <br> -->
 [Michael Smith](https://github.com/onticinc) <br>
 [Patrick Brennan](https://github.com/pambonian)<br>
+<hr />
 
-## Special Thanks to:
+# Special Thanks to:
 #### Avery: For amazing help all cohort during office hours.  
 #### Perice: Great to get to know you and thanks for helping out all cohort! 
 #### Justin: For Help Debuggin Views RSS. 
 #### Roland: For Help Debuggin.  
 #### Eric: For Help Parsing RSS Feed. 
 
+<hr />
 
 # <bold>Extra Special thanks to:</bold> 
-## @Rome - For Going Above And Beyond, Every Day, All Day!
+### @Rome - For Going Above And Beyond, Every Day, All Day!
 
-
+<hr />
 
 
 

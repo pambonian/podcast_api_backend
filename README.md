@@ -40,7 +40,7 @@
 <hr />
 
 # <bold>Extra Special thanks to:</bold> 
-### @Rome - For Going Above And Beyond, Every Day, All Day!
+### @Rome - For Going Above And Beyond. All Day, Every Day!
 
 <hr />
 
@@ -90,7 +90,10 @@ https://docs.djangoproject.com/en/4.0/intro/tutorial01/
 [Patrick Brennan](https://github.com/pambonian)
 
 
-scrapper.py referenced from here:
+##### scrapper.py referenced from here:
+
+<br />
+
 https://www.youtube.com/watch?v=ng2o98k983k
 
 
@@ -125,12 +128,7 @@ https://www.youtube.com/watch?v=ng2o98k983k
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-## Getting Started
 
-To get a local copy up and running follow these simple steps.
-
-### Installation
 
 #### Fork and Clone this repository
    

@@ -30,16 +30,15 @@
 [Patrick Brennan](https://github.com/pambonian)<br>
 
 ## Special Thanks to:
-#### Justin: Help debuggin views rss route. 
-#### Roland: Help debuggin a few errors.  
-#### Avery: Implimineting pagination and help during office hours.  
-#### Eric: Helped with parsing rss feed. 
-#### Perice: Thanks for helping out all cohort. 
-
+#### Avery: For amazing help all cohort during office hours.  
+#### Perice: Great to get to know you and thanks for helping out all cohort! 
+#### Justin: For Help Debuggin Views RSS. 
+#### Roland: For Help Debuggin.  
+#### Eric: For Help Parsing RSS Feed. 
 
 
 # <bold>Extra Special thanks to:</bold> 
-## @Rome - Killin' it each and every day, all day!
+## @Rome - For Going Above And Beyond, Every Day, All Day!
 
 
 

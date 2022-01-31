@@ -132,15 +132,19 @@ To get a local copy up and running follow these simple steps.
 
 ### Installation
 
-1. Fork and Clone this repository
-   ```sh
-   git clone https://github.com/onticinc/podcast_template.git
-   ```
-2. Change rss link in rss/rss_info.py
-   ```sh
-   source = requests.get('https://feeds.simplecast.com/T8TzwY_T').text
-   ```
-3. Install Packages and Migrate
+#### Fork and Clone this repository
+   
+  ```sh
+    git clone https://github.com/onticinc/podcast_template.git
+  ```
+#### Change rss link in rss/rss_info.py
+   
+  ```sh
+    source = requests.get('https://feeds.simplecast.com/T8TzwY_T').text
+  ```
+
+#### Install Packages and Migrate
+  
   ```sh
     <!-- Put Commands Here -->
   ```
@@ -148,13 +152,6 @@ To get a local copy up and running follow these simple steps.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-<!-- Add Content Here -->
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ## Appearance

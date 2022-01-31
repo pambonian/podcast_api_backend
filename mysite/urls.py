@@ -24,7 +24,6 @@ urlpatterns = [
 
     path('', include('blog.urls')),
     path('rss/', include('rss.urls')),
-    path('rss/', include('rss.urls')),
     # path('booking/', user_views.booking, name='booking'),
     path('admin/', admin.site.urls),
     path('register/', user_views.register, name='register'),

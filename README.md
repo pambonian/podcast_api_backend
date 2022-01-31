@@ -51,25 +51,42 @@
 # About The Project
 
 <hr />
+
 #### Link to Linode deployment:
+
+<br />
+
 http://173.230.133.42:8000/
 
 <hr />
 
 
 #### Initial Build was from this series. 
+
 <br />
+
 https://www.youtube.com/watch?v=UmljXZIypDc
 
 <hr />
 
-Poll App is from Django Tutorial Docs. 
+
+#### Poll App is from Django Tutorial Docs. 
+
+<br />
+
 https://docs.djangoproject.com/en/4.0/intro/tutorial01/
+
 
 <hr />
 
-Rss App is parsed and designed by:
+#### Rss App is parsed and designed by:
+
+<br />
+
 [Michael Smith](https://github.com/onticinc) <br>
+
+<br />
+
 [Patrick Brennan](https://github.com/pambonian)
 
 

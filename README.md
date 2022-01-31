@@ -257,12 +257,23 @@ Referenced from:
 https://en.wikipedia.org/wiki/Django_(web_framework)
 
 
+<hr />
+
 ## Beautiful Soup
-- Beautiful Soup is a Python package for parsing HTML and XML documents (including having malformed markup, i.e. non-closed tags, so named after tag soup). It creates a parse tree for parsed pages that can be used to extract data from HTML, which is useful for web scraping.
 
-- Beautiful Soup was started by Leonard Richardson, who continues to contribute to the project, and is additionally supported by Tidelift, a paid subscription to open-source maintenance.
+<hr /> 
 
-Referenced from: 
+##### Beautiful Soup is a Python package for parsing HTML and XML documents (including having malformed markup, i.e. non-closed tags, so named after tag soup). It creates a parse tree for parsed pages that can be used to extract data from HTML, which is useful for web scraping.
+
+<br />
+
+##### Beautiful Soup was started by Leonard Richardson, who continues to contribute to the project, and is additionally supported by Tidelift, a paid subscription to open-source maintenance.
+
+<br />
+
+##### Referenced from: 
+
+<br />
 https://en.wikipedia.org/wiki/Beautiful_Soup_(HTML_parser)
 
 - It is available for Python 2.7 and Python 3

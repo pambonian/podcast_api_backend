@@ -33,8 +33,8 @@
 # Special Thanks to:
 #### Avery: For amazing help all cohort during office hours.  
 #### Perice: Great to get to know you and thanks for helping out all cohort! 
-#### Justin: For Help Debuggin Views RSS. 
-#### Roland: For Help Debuggin.  
+#### Justin: For Help Debugging Views RSS. 
+#### Roland: For Help Debugging.  
 #### Eric: For Help Parsing RSS Feed. 
 
 <hr />

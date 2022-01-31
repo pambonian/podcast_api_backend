@@ -102,6 +102,7 @@ https://www.youtube.com/watch?v=ng2o98k983k
 ### Built With
 
 [Python.js](https://www.python.org/)
+
 <br />
 
 [Django.js](https://www.djangoproject.com/)
@@ -117,6 +118,8 @@ https://www.youtube.com/watch?v=ng2o98k983k
 <br />
 
 [Aws3](https://aws.amazon.com/s3/)
+
+<hr />
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

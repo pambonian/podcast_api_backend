@@ -271,17 +271,32 @@ https://en.wikipedia.org/wiki/Django_(web_framework)
 
 <br />
 
+##### It is available for Python 2.7 and Python 3
+
+<br />
+
 ##### Referenced from: 
 
 <br />
+
 https://en.wikipedia.org/wiki/Beautiful_Soup_(HTML_parser)
 
-- It is available for Python 2.7 and Python 3
+
+<hr />
+
 
 ## Crispy Forms
-- jango-crispy-forms provides you with a |crispy filter and {% crispy %} tag that will let you control the rendering behavior of your Django forms in a very elegant and DRY way. Have full control without writing custom form templates. All this without breaking the standard way of doing things in Django, so it plays nice with any other form application.
 
-Referenced from:
+<hr />
+
+##### jango-crispy-forms provides you with a |crispy filter and {% crispy %} tag that will let you control the rendering behavior of your Django forms in a very elegant and DRY way. Have full control without writing custom form templates. All this without breaking the standard way of doing things in Django, so it plays nice with any other form application.
+
+<br />
+
+##### Referenced from:
+
+<br />
+
 https://django-crispy-forms.readthedocs.io/en/latest/
 
 

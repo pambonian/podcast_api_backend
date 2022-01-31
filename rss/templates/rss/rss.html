@@ -4,14 +4,14 @@
     <div class="media content-section">
       <img class="align-self-start article-img mr-3" src="{{ item.cover_art }}" alt="Eggs Podcast Cover Art">
       <div class="media-body">
+        
+        <p class="mt-0" id="title">{{ item.itunes_title }}</p>
+        <iframe height="52px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/9473c1d8-463c-46fc-bf48-92e75c4a1598?dark=true"></iframe>
+        
         <div class="article-metadata">
           {{ item.itunes_author }}
-          <small class="text-muted">{{ item.pub_date|date:"F d, Y" }}</small>
         </div>
-        
-        <iframe height="52px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/9473c1d8-463c-46fc-bf48-92e75c4a1598?dark=true"></iframe>
-        <h5 class="mt-0">{{ item.itunes_title }}</a></h5>
-        <hr />
+
         {% comment %} <iframe height="52px" width="100%" frameborder="no" scrolling="no" seamless src="{{ item.audio_link }}"></iframe> {% endcomment %}
         {% comment %} <iframe height="52px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/b7a5af0d-6f46-4bd4-8c60-48baff4a5a28?dark=false"></iframe> {% endcomment %} 
         

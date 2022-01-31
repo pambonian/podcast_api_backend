@@ -17,7 +17,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'rss/main.css' %}">
-    {% comment %} <link rel="icon"href="{% static 'favicon.ico' %}"> {% endcomment %}
+    <link rel="icon"href="{% static 'favicon.ico' %}">
     {% if title %}
         <title>Eggs The Podcast - {{ title }}</title>
     {% else %}
@@ -34,9 +34,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="https://podcast-rss-template.herokuapp.com/rss/feed/?page=0">Show Archive</a>
-              <a class="nav-item nav-link" href="{% url 'blog-home' %}">Forum</a>
-              <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
+              {% comment %} Left Links If Needed {% endcomment %}
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">

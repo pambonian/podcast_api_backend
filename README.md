@@ -303,54 +303,48 @@ https://django-crispy-forms.readthedocs.io/en/latest/
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- GENERAL APPROACH -->
+<hr />
 
 ## General Approach
 
-We started by making the example Poll app in Django's docs. Next we followed a blog turorial. 
+<hr />
 
-We deployed to Linode after getting the blog working. During that process we realized how hard it was to deploy to Linode. Not wanting to go throught that process everytime we decided to deploy to heroku after making the rss app and front end changes...  
+##### We started by making the example Poll app in Django's docs. Next we followed a blog turorial. 
 
-That was a big mistake. Lots of debugging, many tears. (not really... ok maybe a few.)
+<br />
 
-Heroku does not have a way to store images or other media other than AWS buckets. We set that up and got the images pulling from our buckets.
+##### We deployed to Linode after getting the blog working. During that process we realized how hard it was to deploy to Linode. Not wanting to go throught that process everytime we decided to deploy to heroku after making the rss app and front end changes...  
 
-When we went to deploy to heroku we were getting 
+<br />
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+##### That was a big mistake. Lots of debugging, many tears. (not really... ok maybe a few.)
 
-<!-- LINK TO USER STORIES -->
+<br />
 
-## User Stories
+##### Heroku does not have a way to store images or other media other than AWS buckets. We set that up and got the images pulling from our buckets.
 
-View our user stories page by following [this link](https://github.com/onticinc/mercer/blob/main/USERSTORIES.md)
+<br />
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- WIREFRAMES -->
-
-## Project Wireframes
-
-Rebuilt existing project
-www.eggscast.com
-
+##### When we went to deploy to heroku we were getting 
 
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- ROADBLOCKS -->
+
+<hr />
 
 # Roadblocks
+
+<hr />
 
 ## RSS:
 
 
+<hr />
+
 ##### Figuring out how to scrape a rss feed with Beautiful Soup was tricky. Took a lot of tryal and error with the views to get it to work in the end. 
 
-
-
-See the [open issues](https://github.com/onticinc/mercer/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

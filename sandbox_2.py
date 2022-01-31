@@ -6,6 +6,8 @@ import json
 source = requests.get('https://feeds.simplecast.com/T8TzwY_T').text
 soup = BeautifulSoup(source, 'lxml')
 
+# This is a change for no reason, that github has required me to do... apologies. 
+
 item_results = []
 
 for item in soup.findAll('item'):

@@ -19,9 +19,8 @@ def home(request):
     
     return render(request, 'rss/home.html', context)
 
-def site_home(request):
-    return render(request, 'rss/rss.html',)
-    
+def splash(request):
+    return render(request, 'rss/rss_splash.html')
 
 
 

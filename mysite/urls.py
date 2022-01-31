@@ -24,7 +24,6 @@ urlpatterns = [
 
     # rss routes
     path('', include('rss.urls')),
-    path('rss/', include('rss.urls')),
 
     # blog routes
     path('blog/', include('blog.urls')),

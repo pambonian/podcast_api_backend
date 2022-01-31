@@ -3,7 +3,7 @@ from .import views
 
 urlpatterns = [
     
-    path('', views.home, name='rss-home'), 
-    path('/site_home', views.home, name='site_home'), 
+    path('', views.splash, name='rss-splash'), 
+    path('home/', views.home, name='rss-home'), 
      
 ]

@@ -283,11 +283,6 @@ www.eggscast.com
 
 ##### Figuring out how to scrape a rss feed with Beautiful Soup was tricky. Took a lot of tryal and error with the views to get it to work in the end. 
 
-- Bidding/Haggling/Reservation interaction. We wanted to allow potential buyers to post their best offer on an item, or make counteroffers, or pay extra to the seller to be able to reserve a product. We did not have enough time during the timeframe to attempt to implement these features.
-
-- Instant-listing. We wanted sellers to be able to take a big mass of things they want to sell (a ton of old equipment in the garage, for example), whip out their phone - and make dozens of listings quickly and easily. We did not have the time to address this functionality.
-
-- Wanted the items on the home page to populate with recent items postes... We ran out of time to be able to adress this issue.  
 
 
 See the [open issues](https://github.com/onticinc/mercer/issues) for a full list of proposed features (and known issues).

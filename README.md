@@ -142,7 +142,7 @@ To get a local copy up and running follow these simple steps.
    ```
 3. Install Packages and Migrate
   ```sh
-
+    <!-- Put Commands Here -->
   ```
 
 
@@ -159,8 +159,6 @@ To get a local copy up and running follow these simple steps.
 
 ## Appearance
 
-
-![Alt text]()
 
 ![Alt text](https://djontic.com/wp-content/uploads/2022/01/Screen-Shot-2022-01-31-at-5.58.53-AM.png)
 

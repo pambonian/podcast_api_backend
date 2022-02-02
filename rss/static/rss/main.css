@@ -98,10 +98,10 @@ margin-bottom: 16px;
 font-size: 2.5rem;
 }
 
-.side-menu-center {
-text-align: center;
-margin:auto;
+.hidden {
+  display:none;
 }
+
 
 a {
 color:#f61;
@@ -115,11 +115,17 @@ a:visited {
 color: rgba(255, 100, 17, 0.959);
 }
 
-#sidebar-logo {
+.sidebar-logo {
   max-width:250px;
   width: 100%;
   height: auto;
 }
+
+
+.side-menu-center {
+  text-align: center;
+  margin:auto;
+  }
 
 .small_title {
   font-size: xx-small;

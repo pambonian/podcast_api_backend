@@ -24,8 +24,7 @@ class Item:
             self.image = item.find('itunes:image')
             self.audio_link = item.find('enclosure')['url']
 
-    def populate(self):
-        return '{} {} {} {} {} {} {} {}'
+    
 
 print(Item.populate)    
 

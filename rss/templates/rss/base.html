@@ -58,7 +58,7 @@
             <div clas="blog-side-menu">
               <div class="side-menu-center">
                 {% comment %} REPLACE IMAGE LINK WITH UPLOAD {% endcomment %}
-                <img id="sidebar-logo" src="https://uploads-ssl.webflow.com/5a1d970f67361900012726e0/5a1d98c907d9180001e411b3_eggs_head_logo500.png" class="sidebar-logo" />
+                <img id="sidebar-logo" src="https://uploads-ssl.webflow.com/5a1d970f67361900012726e0/5a1d98c907d9180001e411b3_eggs_head_logo500.png" style="max-width:250px;"/>
                 <h3>Welcome!</h3>
                 <p class='text-muted'>
                   <ul class="list-group">
@@ -70,6 +70,7 @@
                     <li class="list-group-item list-group-item-light"><a href="https://www.youtube.com/channel/UCz53WsQ9KmEJb5yKeMTsmGg">Follow Us On YouTube</a></li>
                     <li class="list-group-item list-group-item-light"><a href="https://open.spotify.com/playlist/6Pl04vQ5gyrEeMVrvku9F2?si=c8c0f3710be847a6">Spotify Playlist</a></li>
                     <li class="list-group-item list-group-item-light"><a href="https://medium.com/@eggsshow">The Carton</a></li>
+                    
                   </ul>
                 </p>
               </div>
@@ -92,21 +93,22 @@
       </div>
     </main>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script>
-        
-      let showHideSelector = document.getElementsByClassName('show_hide').value;
+      
+      function showSummary() {
+        var x = document.getElementById("summary");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
 
-      if 
-      
-      gameHeader.classList.toggle("hidden");
-      cardContainer.classList.toggle("hidden");
-      
 
     </script>
-
-
     
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

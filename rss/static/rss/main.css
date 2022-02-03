@@ -98,10 +98,10 @@ margin-bottom: 16px;
 font-size: 2.5rem;
 }
 
-.hidden {
-  display:none;
+.side-menu-center {
+text-align: center;
+margin:auto;
 }
-
 
 a {
 color:#f61;
@@ -116,20 +116,26 @@ color: rgba(255, 100, 17, 0.959);
 }
 
 .sidebar-logo {
-  max-width:250px;
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
-
-
-.side-menu-center {
-  text-align: center;
-  margin:auto;
-  }
 
 .small_title {
   font-size: xx-small;
   font-weight: bold;
 }
 
+#summary {
+  display: none;
+}
 
+.accordion.accordion-3 {
+  border-radius: 3px; }
+  .accordion.accordion-3 p {
+  font-size: 1rem; }
+  .accordion.accordion-3 .fa.fa-angle-down {
+  margin-top: -10px; }
+  
+  .accordion .animated-icon1 span {
+  background: #F44336;
+  }
